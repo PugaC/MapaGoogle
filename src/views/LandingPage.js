@@ -7,7 +7,7 @@ import { Descriptions } from 'antd';
 const { MarkerWithLabel } = require("react-google-maps/lib/components/addons/MarkerWithLabel");
 
 
-Geocode.setApiKey("AIzaSyALVjLwOIM1gf7EzdJJVmWLKdLP-yZGTcw");
+Geocode.setApiKey("AIzaSyBKswyE7aMcpv7FaEnFkvGZWptr1ZF803I");
 Geocode.enableDebug();
 
 class LocationSearchModal extends React.Component {
@@ -258,16 +258,16 @@ class LocationSearchModal extends React.Component {
 
         return (
             <div style={{ padding: '1rem', margin: '0 auto', maxWidth: 1000 }}>
-                <h1>Google Map Basic</h1>
+                <h1>Croquis de Negocio</h1>
                 <Descriptions bordered>
-                    <Descriptions.Item label="City">{this.state.city}</Descriptions.Item>
-                    <Descriptions.Item label="Area">{this.state.area}</Descriptions.Item>
-                    <Descriptions.Item label="State">{this.state.state}</Descriptions.Item>
-                    <Descriptions.Item label="Address">{this.state.address}</Descriptions.Item>
+                    <Descriptions.Item label="Ciudad">{this.state.city}</Descriptions.Item>
+                    <Descriptions.Item label="Colonia">{this.state.area}</Descriptions.Item>
+                    <Descriptions.Item label="Estado">{this.state.state}</Descriptions.Item>
+                    <Descriptions.Item label="Dirección">{this.state.address}</Descriptions.Item>
                 </Descriptions>
 
                 <AsyncMap
-                    googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyALVjLwOIM1gf7EzdJJVmWLKdLP-yZGTcw&libraries=places"
+                    googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyBKswyE7aMcpv7FaEnFkvGZWptr1ZF803I&libraries=places"
                     loadingElement={
                         <div style={{ height: `100%` }} />
                     }
